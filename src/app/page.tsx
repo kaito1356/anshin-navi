@@ -1,8 +1,8 @@
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 font-sans">
+    <main className="flex min-h-screen flex-col items-center justify-center p-8 sm:p-24 font-sans">
       <h1 className="text-4xl font-bold text-gray-800">
-        あんしん避難ナビ
+        避難ナビテスト
       </h1>
       <p className="mt-4 text-lg text-gray-600">
         （開発中）
