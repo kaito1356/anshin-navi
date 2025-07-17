@@ -11,12 +11,6 @@
  * ブラウザごとの表示の揺れをリセットし、基本的なスタイルを適用します。
  */
 @import "tailwindcss/preflight";
-
-/*
- * @tailwind components; はv4では通常不要になります。
- * カスタムコンポーネントクラスは、他の方法で定義します。
- */
-
 /*
  * @import "tailwindcss/utilities"; (旧: @tailwind utilities)
  * Tailwind CSS v4の新しい記述法です。

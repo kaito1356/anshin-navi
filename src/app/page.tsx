@@ -1,9 +1,9 @@
-"use client"; 
+"use client"; // このファイルがブラウザ側で動作することを示すおまじないです。
 
 import React, { useRef, useEffect } from 'react';
 import maplibregl, { Map as MaplibreMap } from 'maplibre-gl';
 
-// アプリケーションのメインページコンポーネント
+// これがアプリケーションのメインページコンポーネントです
 export default function HomePage() {
   // 地図を表示するHTML要素（div）を、プログラムから参照するための変数
   const mapContainer = useRef<HTMLDivElement>(null);
@@ -15,7 +15,7 @@ export default function HomePage() {
     // 地図がすでにある場合や、表示先のdiv要素がない場合は何もしない
     if (map.current || !mapContainer.current) return;
 
-    // 地図オブジェクトを生成
+    // 地図オブジェクトを生成します
     map.current = new maplibregl.Map({
       container: mapContainer.current, // 地図を表示するDOM要素
       style: 'https://gsi-cyberjapan.github.io/gsivectortile-mapbox-gl-js/std.json', // 国土地理院の地図スタイル
