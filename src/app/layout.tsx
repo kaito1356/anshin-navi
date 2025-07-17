@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+// 地図ライブラリのスタイルシートの読み込み
+import 'maplibre-gl/dist/maplibre-gl.css';
 
 export const metadata: Metadata = {
   title: "あんしん避難ナビ",
