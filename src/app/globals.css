@@ -1,26 +1,26 @@
-@import "tailwindcss";
+/*
+ * --------------------------------------------------------------------------
+ * ファイル名: src/app/globals.css
+ * 役割: Tailwind CSSの基本的な設定を読み込むためのファイルです。
+ * --------------------------------------------------------------------------
+ */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+ * @import "tailwindcss/preflight"; (旧: @tailwind base)
+ * Tailwind CSS v4の新しい記述法です。
+ * ブラウザごとの表示の揺れをリセットし、基本的なスタイルを適用します。
+ */
+@import "tailwindcss/preflight";
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/*
+ * @tailwind components; はv4では通常不要になります。
+ * カスタムコンポーネントクラスは、他の方法で定義します。
+ */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/*
+ * @import "tailwindcss/utilities"; (旧: @tailwind utilities)
+ * Tailwind CSS v4の新しい記述法です。
+ * 「p-4」や「bg-blue-500」といった、便利なユーティリティクラスを
+ * すべて使えるようにします。
+ */
+@import "tailwindcss/utilities";
