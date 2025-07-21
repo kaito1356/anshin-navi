@@ -64,7 +64,7 @@ const MapSelectionScreen = ({ onConfirmLocation }: { onConfirmLocation: (coords:
     <div style={{ padding: '32px', backgroundColor: '#f3f4f6', minHeight: '100vh' }}>
       <div style={{ backgroundColor: 'white', padding: '24px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
         <h1 style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '16px' }}>
-          STEP 1: マップから場所を指定
+          マップから場所を指定してください
         </h1>
         <div style={{ position: 'relative', height: '500px', width: '100%', borderRadius: '6px', overflow: 'hidden', border: '1px solid #e5e7eb' }}>
           <Map
@@ -151,7 +151,7 @@ const HazardReportScreen = ({ coords, onBack }: { coords: Coords, onBack: () => 
           &larr; 場所の選択に戻る
         </button>
         <h1 style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '16px' }}>
-          STEP 2: ハザード情報の確認
+          ハザード情報の確認
         </h1>
         <div style={{ marginTop: '16px', minHeight: '150px', border: '1px solid #e5e7eb', padding: '16px', borderRadius: '8px' }}>
           {isLoading ? (

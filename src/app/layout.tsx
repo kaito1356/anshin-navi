@@ -3,8 +3,8 @@ import "./globals.css";
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 export const metadata: Metadata = {
-  title: "あんしん避難ナビ",
-  description: "遠隔地から家族の避難を支援するアプリケーション",
+  title: "避難喚起アプリ",
+  description: "遠隔地から家族への避難喚起アプリケーション",
 };
 
 export default function RootLayout({
